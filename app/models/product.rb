@@ -1,4 +1,7 @@
 class Product < ApplicationRecord
+
+  scope :recent, -> { order(created_at: :desc).limit(3)}
+
   has_many :reviews, dependent: :destroy
 
   validates :name, presence: true
