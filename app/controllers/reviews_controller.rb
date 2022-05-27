@@ -10,7 +10,7 @@ class ReviewsController < ApplicationController
     @product = Product.find(params[:product_id])
     @review = @product.reviews.new(review_params)
     if @review.save
-      flash[:notice] = "Review successfully added!"
+      flash[:notice] = "Review successfully added! It had better be positive!"
       redirect_to product_path(@product)
     else
       render :new
@@ -43,7 +43,7 @@ class ReviewsController < ApplicationController
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
-    flash[:notice] = "The customer isn't always right!"
+    flash[:alert] = "The customer isn't always right!"
     redirect_to product_path(@review.product)
   end
 

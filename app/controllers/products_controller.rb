@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      flash[:notice] = "Product successfully added!"
+      flash[:notice] = "Product successfully added! One more than Luigi has!"
       redirect_to products_path
     else
       render :new
@@ -43,7 +43,7 @@ class ProductsController < ApplicationController
   def destroy
     @product = Product.find(params[:id])
     @product.destroy
-    flash[:notice] = "Product successfully deleted!"
+    flash[:alert] = "Product was deleted to keep the princess safe!"
     redirect_to products_path
   end
 
