@@ -1,24 +1,34 @@
-# README
+# Mario's Fine Foods
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### A website created for an Italian plumber turned Fine Food grocer.
 
-Things you may want to cover:
+#### By Emilio Gonzales
 
-* Ruby version
+## Technologies Used
 
-* System dependencies
+* _Ruby_
+* _Rails_
+* _RSpec_
+* _Pry_
+* _Capybara_
+* _Sinatra_
 
-* Configuration
+## Description
+_A website displaying the products sold at Mario's and the reviews submitted for each item._
 
-* Database creation
+## Setup/Installation Requirements
+* _Clone this repository to your desktop_
+* _Navigate to the top level of marios_fine_foods main branch and open in code editor_
+* _run bundle in terminal to add gems_
+* _run rspec in terminal to test code_
+* _run rails s in terminal to test website_
 
-* Database initialization
 
-* How to run the test suite
+## Known Bugs
+* _No Known Bugs_
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
-* Deployment instructions
-
-* ...
+## Contact Information
+Copyright (c) _2022_ _Emilio Gonzales_
