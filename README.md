@@ -28,7 +28,7 @@ _A website displaying the products sold at Mario's and the reviews submitted for
 
 
 ## Known Bugs
-* _No Known Bugs_
+* _Validation for content_body max characters prevents review seeding_
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
