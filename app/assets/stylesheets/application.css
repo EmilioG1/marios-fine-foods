@@ -22,13 +22,27 @@
    font-family: Georgia, 'Times New Roman', Times, serif;
  }
 
+ h3 {
+   padding-top: 15px;
+ }
+
  h1 {
    padding-top: 20px;
    text-align: center;
-   font-weight: bold;
+   color: rgb(170, 4, 4);
+  -webkit-text-stroke: 2px rgb(12, 148, 0);
+  letter-spacing: 3px;
+  font-size: 55px;
  }
 
  h4, .home_link {
    text-align: center;
  }
 
+ .navbar {
+   text-decoration: underline;
+ }
+
+ a:hover {
+  background-color: lightcyan;
+ }
