@@ -1,7 +1,28 @@
 <h1>Products</h1>
 
+
 <% if @products.any? %>
   <ul>
+    <h3>Newest Products</h3>
+      <% @products.most_recent.each do |product| %>
+        <li><%= link_to product.name, product_path(product) %></li>
+      <%end%>
+
+    <h3>Local Products</h3>
+      <%if @products.local.any?%>
+        <% @products.local.each do |product| %>
+          <li><%= link_to product.name, product_path(product) %></li>
+        <%end%>
+      <% else %>
+        <p>There are no local products at this time.</p>
+      <% end %>
+
+    <h3>Most Reviewed Product</h3>
+      <% @products.most_reviews.each do |product| %>
+        <li><%= product.name %></li>
+      <%end%>
+
+    <h3>All Products</h3>
     <% @products.each do |product| %>
       <li><%= link_to product.name, product_path(product) %></li>
     <% end %>
