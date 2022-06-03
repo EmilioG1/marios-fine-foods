@@ -5,7 +5,7 @@ describe Review do
 
   it { should validate_presence_of :author }
   
-  it { should validate_length_of(:author).is_at_most(20)}
+  it { should validate_presence_of :product_id}
   
   it { should validate_presence_of :rating }
   
