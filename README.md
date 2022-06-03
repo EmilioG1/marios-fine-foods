@@ -21,8 +21,10 @@ _A website displaying the products sold at Mario's and the reviews submitted for
 ## Setup/Installation Requirements
 * _Clone this repository to your desktop_
 * _Navigate to the top level of marios_fine_foods main branch and open in code editor_
-* _to recreate the database run <code>psql marios_fine_foods < database_backup.sql_</code>
-* _then run <code>createdb -T marios_fine_foods marios_fine_foods_test_</code>
+* _run <code>postres</code> in terminal_
+* _to recreate the database:_
+  >run <code>psql marios_fine_foods < database_backup.sql</code>
+  ><br>_then run <code>createdb -T marios_fine_foods marios_fine_foods_test_</code>
 * _run <code>bundle</code> in terminal to add gems_
 * _run <code>rspec</code> in terminal to test code_
 * _run <code>rails s</code> in terminal to test website_
