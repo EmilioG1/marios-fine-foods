@@ -10,8 +10,9 @@
 * _Rails_
 * _RSpec_
 * _Pry_
-* _Capybara_
-* _Sinatra_
+* _Faker_
+* _Shoulda Matchers_
+* _CSS/Bootstrap_
 
 ## Description
 _A website displaying the products sold at Mario's and the reviews submitted for each item._
@@ -19,6 +20,8 @@ _A website displaying the products sold at Mario's and the reviews submitted for
 ## Setup/Installation Requirements
 * _Clone this repository to your desktop_
 * _Navigate to the top level of marios_fine_foods main branch and open in code editor_
+* _to recreate the database run psql marios_fine_foods < database_backup.sql_
+* _then run createdb -T marios_fine_foods marios_fine_foods_test_
 * _run bundle in terminal to add gems_
 * _run rspec in terminal to test code_
 * _run rails s in terminal to test website_

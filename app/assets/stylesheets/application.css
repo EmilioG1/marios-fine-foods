@@ -17,3 +17,12 @@
  body {
    background-color: aliceblue;
  }
+
+ h1, h3 {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ h1 {
+   padding-top: 20px;
+   text-align: center;
+ }
