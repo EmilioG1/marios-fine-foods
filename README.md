@@ -31,6 +31,7 @@ _A website displaying the products sold at Mario's and the reviews submitted for
 * _to equip admin authorization:_
   >_go to rails console, enter_ <code>@user = User.first</code>
   ><br>_then_ <code>@user.admin = true</code>
+  > @user.update
 
 
 ## Known Bugs
