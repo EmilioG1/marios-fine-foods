@@ -19,7 +19,7 @@ end
   Review.create!(author: Faker::Sports::Football.player,
       rating: Faker::Number.between(from: 1, to: 5),
       product_id: Faker::Number.between(from: 1, to: 50),
-      content_body: Faker::Lorem.sentence(word_count: 50, random_words_to_add: 200))
+      content_body: Faker::Lorem.characters(number: 150))
 end
   
   p "Created #{Product.count} products"
