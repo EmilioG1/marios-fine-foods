@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
 
     if signed_in? == true
       if current_user.admin != true
-        flash[:alert] = "You aren't authorized to  perform this action"
+        flash[:alert] = "You aren't authorized to perform this action"
       if request.referrer == nil
         redirect_to root_path
       else
